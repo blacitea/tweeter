@@ -1,9 +1,3 @@
-.parent {
-  display: flex;
-}
-div {
-  display: inline-block;
-  background-color: aquamarine;
-  padding: 1em;
-  border: black 2px solid;
+* {
+  box-sizing: border-box;
 }
