@@ -20,6 +20,18 @@ body {
   font-size: 24px;
 }
 
+ /* Debugging Styling. Remove for production */
+/* * { outline: 2px none  red ; row-gap: 5px; column-gap: 5px;}
+* * { outline: 2px none  green }
+* * * { outline: 2px  solid orange }
+* * * * { outline: 2px  solid blue }
+* * * * * { outline: 2px  solid red }
+* * * * * * { outline: 2px  solid green }
+* * * * * * * { outline: 2px  solid orange }
+* * * * * * * * { outline: 2px  solid blue } */
+/* End of debug code */
+
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
@@ -30,7 +42,11 @@ body {
 
  main {
    padding: 0 5%;
+   position: relative;
+   top: 120px;
  }
+
+
 
  .old-tweet {
    margin: 2rem 0;
@@ -47,8 +63,15 @@ body {
    border: 1px solid black;
    padding: 1em;
    margin: 1em 0;
+  }
 
- }
+.shadow {
+  box-shadow: 5px 5px 5px grey;
+}
+
+.fade {
+  opacity: 0;
+}
 
  .old-tweet li header {
    display: flex;
