@@ -1,0 +1,43 @@
+.old-tweet {
+  margin: 2rem 0;
+}
+
+main ul {
+  padding: 0;
+  margin: 0;
+}
+
+.old-tweet li {
+  list-style: none;
+  margin: 1em;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em 0;
+ }
+
+.shadow {
+ box-shadow: 5px 5px 5px grey;
+}
+
+.fade {
+ opacity: 0;
+}
+
+.old-tweet li header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.old-tweet article {
+ height: 2em;
+ border-bottom: 2px solid black;
+}
+
+.old-tweet footer {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ font-size: 0.75em;
+ color: lightslategray;
+}
