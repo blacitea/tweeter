@@ -6,9 +6,9 @@
 .new-tweet textarea {
   background: transparent;
   resize: none;
-  border-width: 0 0 3px 0;
+  border: none;
+  border-bottom: 3px black solid;
   outline: none;
-  border-color: black;
   margin: 1rem 0;
 }
 
