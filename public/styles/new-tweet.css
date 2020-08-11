@@ -1,0 +1,24 @@
+.new-tweet form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-tweet textarea {
+  background: transparent;
+  resize: none;
+  border-width: 0 0 3px 0;
+  border-color: black;
+  margin: 1rem 0;
+}
+
+.new-tweet footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bungee", sans-serif;
+}
+
+.new-tweet footer button {
+  color: white;
+  background-color: #40569E;
+  padding: 0 1rem;
+}
