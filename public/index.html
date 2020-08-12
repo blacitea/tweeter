@@ -19,11 +19,11 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/db82fa5482.js" crossorigin="anonymous"></script>
 
     <!-- App JS -->
     <script defer src="/scripts/client.js"></script>
     <script defer src="/scripts/composer-char-counter.js"></script>
-    <script defer src="/scripts/old-tweet-hover.js"></script>
   </head>
 
   <body>
@@ -63,8 +63,12 @@
             </header>
             <article>The Tweet content</article>
             <footer>
-              <p>Time stamp new Date() - tweet.created_at</p>
-              <p>Flag, Retweet, Like</p>
+              <div class="post-time">Time stamp new Date() - tweet.created_at</div>
+              <div>
+                <i class="fas fa-flag"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="fas fa-heart"></i>
+              </div>
             </footer>
           </li>
           <li>

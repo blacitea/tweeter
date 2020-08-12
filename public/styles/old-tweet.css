@@ -14,6 +14,9 @@ main ul {
   padding: 1em;
   margin: 1em 0;
  }
+ .old-tweet li:hover {
+  box-shadow: 5px 5px 5px grey;
+}
 
 .shadow {
  box-shadow: 5px 5px 5px grey;
@@ -26,7 +29,17 @@ main ul {
 .old-tweet li header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+
+}
+
+.handler {
+  margin-left: auto;
+  display: none;
+}
+
+.old-tweet:hover .handler {
+  display: block;
 }
 
 .old-tweet article {
@@ -34,10 +47,20 @@ main ul {
  border-bottom: 2px solid black;
 }
 
+
+
 .old-tweet footer {
  display: flex;
  flex-direction: row;
  justify-content: space-between;
  font-size: 0.75em;
  color: lightslategray;
+}
+
+.old-tweet div {
+  padding: 1em;
+}
+
+.old-tweet div i {
+  padding: 0 2px;
 }
