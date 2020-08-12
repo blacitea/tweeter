@@ -41,7 +41,7 @@ $(document).ready(function() {
         <p>${data.user.name}</p>
         <p class="handler">${data.user.handle}</p>
       </header>
-      <article>${data.content.text}</article>
+      <p class="content">${data.content.text}</p>
       <footer>
         <div class="post-time">${data.created_at}</div>
         <div>
