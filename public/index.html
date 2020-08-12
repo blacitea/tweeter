@@ -22,8 +22,9 @@
     <script src="https://kit.fontawesome.com/db82fa5482.js" crossorigin="anonymous"></script>
 
     <!-- App JS -->
-    <script defer src="/scripts/client.js"></script>
+    <script src="/scripts/client.js"></script>
     <script defer src="/scripts/composer-char-counter.js"></script>
+    <script src="/scripts/createTweet.js"></script>
   </head>
 
   <body>
@@ -53,39 +54,7 @@
           </footer>
         </form>
       </section>
-      <section class="old-tweet">
-        <ul>
-          <li>
-            <header>
-              <p>images</p>
-              <p>User name</p>
-              <p class="handler fade">Handler</p>
-            </header>
-            <article>The Tweet content</article>
-            <footer>
-              <div class="post-time">Time stamp new Date() - tweet.created_at</div>
-              <div>
-                <i class="fas fa-flag"></i>
-                <i class="fas fa-retweet"></i>
-                <i class="fas fa-heart"></i>
-              </div>
-            </footer>
-          </li>
-          <li>
-            <header>User Info</header>
-            <article>The Tweet content</article>
-            <footer>Post time and action buttons</footer>
-          </li>
-          <li>
-            <header>User Info</header>
-            <article>The Tweet content</article>
-            <footer>Post time and action buttons</footer>
-          </li><li>
-            <header>User Info</header>
-            <article>The Tweet content</article>
-            <footer>Post time and action buttons</footer>
-          </li>
-        </ul>
+       <section id="tweets-container">
       </section>
     </main>
   </head>
