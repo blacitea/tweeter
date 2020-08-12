@@ -15,15 +15,7 @@ main ul {
   margin: 1em 0;
  }
  .old-tweet li:hover {
-  box-shadow: 5px 5px 5px grey;
-}
-
-.shadow {
- box-shadow: 5px 5px 5px grey;
-}
-
-.fade {
- opacity: 0;
+  box-shadow: 1em 1em 0.5em grey;
 }
 
 .old-tweet li header {
