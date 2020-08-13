@@ -69,8 +69,11 @@ $(() => {
   });
 });
 
+// User can hide/display the write new tweet section
+
 $(() => {
   $('#write-tweet button').click(function() {
     $('.new-tweet').slideToggle();
+    $('#tweet-text').focus();
   });
 })
