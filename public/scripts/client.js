@@ -4,6 +4,8 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+
+
 const createTweetElement = function(data) {
   const $tweet = `
     <article>
@@ -34,13 +36,21 @@ const renderTweets = function(tweets) {
 };
 
 $(() => {
+  $.getJSON(`http://localhost:8080/tweets`)
+    .then((tweets) => renderTweets(tweets));
   $('form').submit(function(event) {
     event.preventDefault();
-    const serialized = $(this).serialize();
-    console.log(serialized);
-    $.post('http://localhost:8080/tweets', serialized);
-    $.getJSON(`http://localhost:8080/tweets`)
-      .then((tweets) => renderTweets(tweets));
-
+    let contentLen = $(this).children('#tweet-text').val().trim().length;
+    if (contentLen > 0 && contentLen <= 140) {
+      const serialized = $(this).serialize();
+      $.post('http://localhost:8080/tweets', serialized)
+        .then(() => {
+          $(this).trigger(`reset`);
+          return $.getJSON(`http://localhost:8080/tweets`);
+        })
+        .then((tweets) => renderTweets(tweets));
+    } else {
+      contentLen > 140 ? alert("Tweet max char 140 only! Try our TinyApp to shorten your URLs") : alert("What are you doing posting an empty tweet?!");
+    }
   });
 });
