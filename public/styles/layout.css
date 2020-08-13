@@ -57,9 +57,6 @@ body {
      flex-direction: row;
      flex-wrap: wrap;
    }
-   .space {
-     flex-basis: 0;
-   }
    nav {
      clear: both;
    }
