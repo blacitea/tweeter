@@ -4,12 +4,14 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+ // Avoid XSS
 const escape = function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
+// Turn JSON object to html template
 const createTweetElement = function(data) {
   const time = `${moment(data.created_at).toNow(true)} ago`;
   const $tweet = `
@@ -32,6 +34,7 @@ const createTweetElement = function(data) {
   `;
   return $tweet;
 };
+
 
 const renderTweets = function(tweets) {
   for (let tweet of tweets) {
@@ -77,10 +80,9 @@ $(() => {
 });
 
 // User can hide/display the write new tweet section
-
 $(() => {
   $('#write-tweet button').click(function() {
     $('.new-tweet').slideToggle();
     $('#tweet-text').focus();
   });
-})
+});
