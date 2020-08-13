@@ -6,5 +6,5 @@ body > header {
   flex-direction: column;
   background-color: powderblue;
   background-image: url(../images/headerbg.png);
-  padding: 120px 0 3em 0;
+  padding: 5em 0 3em 0;
 }
