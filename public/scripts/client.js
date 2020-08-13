@@ -12,6 +12,7 @@ const createTweetElement = function(data) {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+  const time = `${moment(data.created_at).toNow(true)} ago`;
   const $tweet = `
     <article>
     <header>
@@ -21,7 +22,7 @@ const createTweetElement = function(data) {
     </header>
     <p class="content">${escape(data.content.text)}</p>
     <footer>
-      <div class="post-time">${data.created_at}</div>
+      <div class="post-time">${time}</div>
       <div>
         <i class="fa fa-flag"></i>
         <i class="fa fa-retweet"></i>
