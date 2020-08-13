@@ -20,7 +20,8 @@ nav {
 
 nav button {
   background-color: transparent;
-  border: 0;
+  border: none;
+  outline: none;
   background: none;
   box-shadow: none;
   border-radius: 0px;

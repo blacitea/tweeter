@@ -12,6 +12,10 @@
   box-shadow: 1em 1em 0.5em grey;
 }
 
+#tweets-container img {
+  padding: 0 1em 0 0;
+}
+
 #tweets-container article header {
   display: flex;
   flex-direction: row;

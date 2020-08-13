@@ -68,3 +68,9 @@ $(() => {
     }
   });
 });
+
+$(() => {
+  $('#write-tweet button').click(function() {
+    $('.new-tweet').slideToggle();
+  });
+})
