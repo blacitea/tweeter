@@ -23,6 +23,7 @@
 .handler {
   margin-left: auto;
   display: none;
+  color: silver;
 }
 
 #tweets-container article:hover .handler {
