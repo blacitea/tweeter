@@ -41,7 +41,6 @@ body {
 }
 
  main {
-   padding: 0 5%;
-   position: relative;
-   top: 120px;
+   width: 80vw;
+   margin: auto;
  }

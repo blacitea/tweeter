@@ -36,6 +36,7 @@
   border-bottom: 2px black solid;
   outline: none;
   padding: 1em;
+  text-align: justify;
 }
 
 #tweets-container footer {
@@ -52,4 +53,24 @@
 
 #tweets-container div i {
   padding: 0 2px;
+}
+
+#scroll-top {
+  position: fixed;
+  bottom: 1em;
+  right: 0.5em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: orangered;
+  border: none;
+  font-size: 2em;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+#scroll-top:hover {
+  transition: 300ms;
+  transform: translate(0, -5px);
 }
