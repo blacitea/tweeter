@@ -23,9 +23,9 @@ const createTweetElement = function(data) {
     <footer>
       <div class="post-time">${data.created_at}</div>
       <div>
-        <i class="fas fa-flag"></i>
-        <i class="fas fa-retweet"></i>
-        <i class="fas fa-heart"></i>
+        <i class="fa fa-flag"></i>
+        <i class="fa fa-retweet"></i>
+        <i class="fa fa-heart"></i>
       </div>
     </footer>
   </article>
@@ -40,6 +40,13 @@ const renderTweets = function(tweets) {
   }
 };
 
+const renderError = function(err) {
+  const warn = `<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>`;
+  const msg = `${warn} ${err} ${warn}`;
+  $('#err-msg').html(msg);
+  $('.err').slideDown();
+};
+
 $(() => {
   $.getJSON(`http://localhost:8080/tweets`)
     .then((tweets) => renderTweets(tweets));
@@ -51,11 +58,12 @@ $(() => {
       $.post('http://localhost:8080/tweets', serialized)
         .then(() => {
           $(this).trigger(`reset`);
+          $('.err').slideUp();
           return $.getJSON(`http://localhost:8080/tweets`);
         })
         .then((tweets) => renderTweets(tweets));
     } else {
-      contentLen > 140 ? alert("Tweet max char 140 only! Try our TinyApp to shorten your URLs") : alert("What are you doing posting an empty tweet?!");
+      contentLen > 140 ? renderError(`Tweet max char 140 only!`) : renderError("What are you doing posting an empty tweet?!");
     }
   });
 });

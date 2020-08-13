@@ -23,3 +23,27 @@
   background-color: #40569E;
   padding: 0 1rem;
 }
+
+.err {
+  border: 5px red solid;
+  color: red;
+  display: none;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.err p {
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.err i {
+  font-size: 2em;
+  align-self: center;
+  padding: 0.5em;
+}
