@@ -7,6 +7,11 @@
 
 
 const createTweetElement = function(data) {
+  const escape = function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   const $tweet = `
     <article>
     <header>
@@ -14,7 +19,7 @@ const createTweetElement = function(data) {
       <p>${data.user.name}</p>
       <p class="handler">${data.user.handle}</p>
     </header>
-    <p class="content">${data.content.text}</p>
+    <p class="content">${escape(data.content.text)}</p>
     <footer>
       <div class="post-time">${data.created_at}</div>
       <div>
@@ -40,7 +45,7 @@ $(() => {
     .then((tweets) => renderTweets(tweets));
   $('form').submit(function(event) {
     event.preventDefault();
-    let contentLen = $(this).children('#tweet-text').val().trim().length;
+    const contentLen = $(this).children('#tweet-text').val().trim().length;
     if (contentLen > 0 && contentLen <= 140) {
       const serialized = $(this).serialize();
       $.post('http://localhost:8080/tweets', serialized)
