@@ -1,10 +1,9 @@
 $(document).ready(function() {
-  // --- our code goes here ---
-  console.log("DOM is ready");
+  // calculate remaining char count on keyup
   $('textarea').keyup(function() {
     let charRemain = 140 - $(this).val().trim().length;
     let counter = $(this).siblings().children('.counter');
     charRemain < 0 ? counter.css("color", "red") : counter.removeAttr("style");
-    counter.html(charRemain);
+    counter.text(charRemain);
   });
 });
