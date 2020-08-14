@@ -8,9 +8,14 @@ With the help of some HTML, CSS, jQuery, SASS, we created this SPA that packged 
 
 ## Demo
 
-![Error Message](https://github.com/blacitea/tweeter/blob/master/public/images/dynamic_error_message.mp4)
+
+![Show new tweet without refreshing page](https://raw.githubusercontent.com/blacitea/tweeter/master/public/gifs/render_new_without_refresh.gif)
+
 ![Responsive design - layout changes based on screen size](https://raw.githubusercontent.com/blacitea/tweeter/master/public/images/responsive_design.gif)
 
+![Form toggle button - show more tweets instead](https://raw.githubusercontent.com/blacitea/tweeter/master/public/gifs/toggle_form.gif)
+
+![Error Message](https://raw.githubusercontent.com/blacitea/tweeter/master/public/gifs/error_exceed.gif)
 
 ## Getting Started
 
