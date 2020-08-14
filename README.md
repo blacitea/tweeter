@@ -9,6 +9,7 @@ With the help of some HTML, CSS, jQuery, SASS, we created this SPA that packged 
 ## Demo
 
 ![Error Message](https://github.com/blacitea/tweeter/blob/master/public/images/dynamic_error_message.mp4)
+![Responsive design - layout changes based on screen size](https://raw.githubusercontent.com/blacitea/tweeter/master/public/images/responsive_design.gif)
 
 
 ## Getting Started
