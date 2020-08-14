@@ -74,7 +74,7 @@ $(() => {
         })
         .then((tweets) => renderTweets(tweets));
     } else {
-      contentLen > 140 ? renderError(`Tweet max char 140 only!`) : renderError("What are you doing posting an empty tweet?!");
+      contentLen > 140 ? renderError(`Please respect Tweet char max at 140 only! <3`) : renderError("Instead of an empty tweet, have some 🍦🍦🍦");
     }
   });
 });
