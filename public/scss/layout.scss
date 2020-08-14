@@ -25,8 +25,7 @@ body {
  body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #F0F8FF;
-  display: flex;
-  flex-direction: column;
+  @extend %flexCol;
 }
 
  main {

@@ -1,8 +1,12 @@
+%flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   #user {
     height: 400px;
-    display: flex;
-    flex-direction: column;
+    @extend %flexCol;
     justify-content: center;
     align-items: center;
     background-color: powderblue;
