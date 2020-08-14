@@ -24,7 +24,7 @@ const createTweetElement = function(data) {
     <p class="content">${escape(data.content.text)}</p>
     <footer>
       <div class="post-time">${time}</div>
-      <div>
+      <div class="reaction">
         <i class="fa fa-flag"></i>
         <i class="fa fa-retweet"></i>
         <i class="fa fa-heart"></i>
