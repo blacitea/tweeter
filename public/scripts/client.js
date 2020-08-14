@@ -4,9 +4,9 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
- // Avoid XSS
+// Avoid XSS
 const escape = function(str) {
-  let div = document.createElement('div');
+  const div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
@@ -37,7 +37,7 @@ const createTweetElement = function(data) {
 
 
 const renderTweets = function(tweets) {
-  for (let tweet of tweets) {
+  for (const tweet of tweets) {
     const $newtweet = createTweetElement(tweet);
     $('#tweets-container').prepend($newtweet);
   }
@@ -84,5 +84,6 @@ $(() => {
   $('#write-tweet button').click(function() {
     $('.new-tweet').slideToggle();
     $('#tweet-text').focus();
+    $('.err').slideUp();
   });
 });
