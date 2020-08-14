@@ -1,0 +1,88 @@
+%hideme {
+  display: none;
+  color: silver;
+}
+
+%flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#tweets-container {
+  margin: 2rem 0;
+  article {
+    border: 1px solid black;
+    padding: 1em;
+    margin: 2em 1em;
+
+    &:hover {
+      box-shadow: 1em 1em 0.5em grey;
+      .handler, .reaction {
+        display: block;
+      }
+    }
+
+    header {
+      @extend %flexrow;
+    }
+  }
+  .handler {
+    margin-left: auto;
+    @extend %hideme;
+  }
+
+  .reaction {
+    @extend %hideme;
+  }
+
+
+
+  img {
+    padding: 0 1em 0 0;
+  }
+
+  .content {
+    border: none;
+    border-bottom: 2px black solid;
+    outline: none;
+    padding: 1em;
+    text-align: justify;
+  }
+
+  footer {
+    @extend %flexrow;
+    justify-content: space-between;
+    font-size: 0.75em;
+    color: lightslategray;
+   }
+
+   div {
+    padding: 1em;
+
+    i {
+      padding: 0 2px;
+    }
+  }
+
+}
+
+
+#scroll-top {
+  position: fixed;
+  bottom: 1em;
+  right: 0.5em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: orangered;
+  border: none;
+  font-size: 2em;
+  @extend %hideme;
+  cursor: pointer;
+
+  &:hover {
+    transition: 300ms;
+    transform: translate(0, -5px);
+  }
+}
