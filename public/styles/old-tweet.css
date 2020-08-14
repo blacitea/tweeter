@@ -27,6 +27,11 @@
   color: silver;
 }
 
+.reaction {
+  color: silver;
+  display: none;
+}
+
 #tweets-container article:hover .handler {
   display: block;
 }
