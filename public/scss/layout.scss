@@ -22,6 +22,12 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ %flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
  body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #F0F8FF;
