@@ -20,7 +20,7 @@ With the help of some HTML, CSS, jQuery, SASS, we created this SPA that packged 
 ## Getting Started
 
 1. Install dependencies using the `npm install` command.
-2. Complie css files using the `npm sass` command.
+2. Complie css files using the `npm run sass` command.
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
